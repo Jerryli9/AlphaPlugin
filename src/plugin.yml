@@ -1,0 +1,27 @@
+name: newplugin
+version: 1.0.0
+author: AspectOfTheAlpha
+main: com.alpha.newplugin.newplugin
+api-version: 1.14
+commands:
+  heal:
+    description: Heals player to max heath.
+    usage: /<command>
+    aliases: [healme, healmax]
+  feed:
+    description: Feeds player to max saturation.
+    usage: /<command>
+    aliases: [feedme, feedmax]
+  farmtime:
+    description: Spawns Mobs
+    usage: /<command>
+  givekbXSlimeball:
+    description: Knockback X Slimeball
+    usage: /<command>
+  explosionaxe:
+    description: Explosive Axe
+    usage: /<command>
+
+
+
+
