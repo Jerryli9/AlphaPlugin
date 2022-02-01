@@ -23,10 +23,10 @@ public class ItemManager {
     private static void createKnockbackball() {
         ItemStack item = new ItemStack(Material.SLIME_BALL, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§6Knockback X Slimeball");
+        meta.setDisplayName("§6Knockback × Slimeball");
         List<String> lore = new ArrayList<>();
         lore.add("§7BOOOOOING");
-        lore.add("§7made in china");
+        lore.add("§7Made In China");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.KNOCKBACK, 10, true);
         meta.addEnchant(Enchantment.DAMAGE_ALL, 8, true);
@@ -40,8 +40,8 @@ public class ItemManager {
         ItemMeta meta = item.getItemMeta();
         meta.setDisplayName("§cExplosive §cAxe");
         List<String> lore = new ArrayList<>();
-        lore.add("§7What Could This Possibly do?");
-        lore.add("§7made in china");
+        lore.add("§7What could this possibly do?");
+        lore.add("§7Made in China");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.KNOCKBACK, 1, true);
         meta.addEnchant(Enchantment.DAMAGE_ALL, 5, true);
