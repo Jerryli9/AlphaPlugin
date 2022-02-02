@@ -11,12 +11,14 @@ import java.util.List;
 
 public class ItemManager {
 
-    public static ItemStack knockbackball;
-    public static  ItemStack explosionaxe;
+    public static ItemStack KNOCKBACK_BALL;
+    public static  ItemStack EXPLOSIVE_SHOVEL;
+    public static ItemStack HEALING_WAND;
 
     public static void init() {
         createKnockbackball();
-        createExplosionAxe();
+        createExplosionShovel();
+        createHealingWand();
 
     }
 
@@ -32,22 +34,39 @@ public class ItemManager {
         meta.addEnchant(Enchantment.DAMAGE_ALL, 8, true);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
         item.setItemMeta(meta);
-        knockbackball = item;
+        KNOCKBACK_BALL = item;
 
     }
-    private static void createExplosionAxe() {
-        ItemStack item = new ItemStack(Material.NETHERITE_AXE, 1);
+    private static void createExplosionShovel() {
+        ItemStack item = new ItemStack(Material.DIAMOND_SHOVEL, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§cExplosive §cAxe");
+        meta.setDisplayName("§cAspect §cOf §cThe §cJerry");
         List<String> lore = new ArrayList<>();
         lore.add("§7What Could This Possibly do?");
         lore.add("§7made in china");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.KNOCKBACK, 1, true);
-        meta.addEnchant(Enchantment.DAMAGE_ALL, 5, true);
+        meta.addEnchant(Enchantment.DAMAGE_ALL, 7, true);
+        meta.addEnchant(Enchantment.SWEEPING_EDGE, 4, true);
+        meta.setUnbreakable(true);
+        meta.addItemFlags(ItemFlag.HIDE_UNBREAKABLE);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
         item.setItemMeta(meta);
-        explosionaxe = item;
+        EXPLOSIVE_SHOVEL = item;
+
+    }
+
+    private static void createHealingWand() {
+        ItemStack item = new ItemStack(Material.STICK, 1);
+        ItemMeta meta = item.getItemMeta();
+        meta.setDisplayName("§cHealing §cWand");
+        List<String> lore = new ArrayList<>();
+        lore.add("§7What Could This Possibly do?");
+        lore.add("§7made in china");
+        meta.setLore(lore);
+        meta.addEnchant(Enchantment.LUCK, 1, true);
+        item.setItemMeta(meta);
+        HEALING_WAND= item;
 
     }
 }

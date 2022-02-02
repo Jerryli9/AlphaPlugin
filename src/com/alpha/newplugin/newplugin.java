@@ -18,7 +18,8 @@ public class newplugin extends  JavaPlugin {
         getCommand("feed").setExecutor(new newplugincommands());
         getCommand("farmtime").setExecutor(new newplugincommands());
         getCommand("givekbXSlimeball").setExecutor(new newplugincommands());
-        getCommand("explosionaxe").setExecutor(new newplugincommands());
+        getCommand("explosiveshovel").setExecutor(new newplugincommands());
+        getCommand("healingwand").setExecutor(new newplugincommands());
         getServer().getConsoleSender().sendMessage(ChatColor.GREEN + "[Plugin]: Plugin is now enabled!");
     }
 

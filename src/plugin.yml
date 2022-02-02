@@ -18,8 +18,11 @@ commands:
   givekbXSlimeball:
     description: Knockback X Slimeball
     usage: /<command>
-  explosionaxe:
-    description: Explosive Axe
+  explosiveshovel:
+    description: Explosive Shovel
+    usage: /<command>
+  healingwand:
+    description: Healing Wand
     usage: /<command>
 
 

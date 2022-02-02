@@ -6,7 +6,6 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.EntityType;
-import org.bukkit.entity.Item;
 import org.bukkit.entity.Player;
 
 public class newplugincommands implements CommandExecutor {
@@ -26,11 +25,15 @@ public class newplugincommands implements CommandExecutor {
         }
 
         else if (cmd.getName().equalsIgnoreCase("givekbXSlimeball")) {
-            player.getInventory().addItem(ItemManager.knockbackball);
+            player.getInventory().addItem(ItemManager.KNOCKBACK_BALL);
         }
 
-        else if (cmd.getName().equalsIgnoreCase("explosionaxe")) {
-            player.getInventory().addItem(ItemManager.explosionaxe);
+        else if (cmd.getName().equalsIgnoreCase("ExplosiveShovel")) {
+            player.getInventory().addItem(ItemManager.EXPLOSIVE_SHOVEL);
+        }
+
+        else if (cmd.getName().equalsIgnoreCase("healingwand")) {
+            player.getInventory().addItem(ItemManager.HEALING_WAND);
         }
 
         else if (cmd.getName().equalsIgnoreCase("farmtime")) {
